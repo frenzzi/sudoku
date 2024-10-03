@@ -1,0 +1,11 @@
+
+version:
+services:
+ sudoku-service:
+  image: 'frenzzi/sudoku:latest'
+  environment:
+   - "PORT:3000"
+  ports:
+   - "80:3000"
+  volumes:
+  - ./:/app
